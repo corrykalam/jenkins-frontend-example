@@ -74,7 +74,7 @@ pipeline {
                                 transfers: [
                                     sshTransfer(
                                         sourceFiles: 'docker-compose.yml',
-                                        remoteDirectory: 'backend',
+                                        remoteDirectory: 'frontend',
                                         execCommand: 'cd backend && docker-compose up -d',
                                         execTimeout: 120000,
                                     )
@@ -101,7 +101,7 @@ pipeline {
                                 transfers: [
                                     sshTransfer(
                                         sourceFiles: 'docker-compose.yml',
-                                        remoteDirectory: 'backend',
+                                        remoteDirectory: 'frontend',
                                         execCommand: 'cd backend && docker-compose up -d',
                                         execTimeout: 120000,
                                     )
