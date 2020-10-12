@@ -2,8 +2,7 @@ version: '3.3'
 
 services:  
     frontend:
-        build:
-            context: frontend/
+        image: corrykalam/jenkins-frontend-example:dev
         container_name: frontend-vue
         ports:
             - 8080:8080
