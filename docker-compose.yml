@@ -8,9 +8,6 @@ services:
             - 8080:8080
             - 80:80
         networks: 
-            - deploy
+            - backend_deploy
         environment:
             - VUE_APP_BASE_URL=http://34.201.252.160/v1   
-networks:
-    deploy:
-        driver: bridge
