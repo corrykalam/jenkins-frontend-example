@@ -11,4 +11,5 @@ services:
             - VUE_APP_BASE_URL=http://34.201.252.160/v1   
 networks:
     default:
-        driver: backend_deploy
+        external:
+            name: backend_deploy
